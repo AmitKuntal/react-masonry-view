@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.container{
+  margin: 10px auto;
+  columns: 6;
+  column-gap: 10px;
+}
+
+.container > img{
+  width: 100%;
+  break-inside: a;
+}
