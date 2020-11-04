@@ -76,10 +76,9 @@ export default class Home extends React.Component{
                 return <Image img={img} key={index} index={index} handleClick={this.openPopUp}/>})
             :null}
 
-            <Modal show={this.state.showModal} handleClose={this.hideModal}>
+            <Modal show={this.state.showModal} handleClose={this.hideModal} previousImage={this.previousImage} nextImage={this.nextImage}>
                 <img src={this.state.img[this.state.currnetImage]} alt={this.state.currnetImage}/>
-                <button onClick={this.previousImage}>Previous</button>
-                <button onClick={this.nextImage}>Next</button>
+                
             </Modal>
             </div>
         )
